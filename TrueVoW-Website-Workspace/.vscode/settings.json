@@ -1,0 +1,23 @@
+{
+    // Claude/claude-code integration settings (placeholders). This configuration uses an environment
+    // variable for the API key so the secret is not stored in the repo or workspace file.
+    "claudeCode.enabled": true,
+    // Set your key in the environment variable named below (example: CLAUDE_API_KEY).
+    "claudeCode.apiKeyEnv": "CLAUDE_API_KEY",
+    "claudeCode.model": "claude-2.1",
+    "claudeCode.host": "https://api.anthropic.com",
+    "claudeCode.requestTimeoutMs": 30000,
+    "claudeCode.useSecureConnection": true,
+    // Editor niceties
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    // Quick notes for you (these are safe to leave in-place):
+    // 1) To enable actual calls, set the environment variable named in "claudeCode.apiKeyEnv" to your
+    //    Claude/Anthropic API key (see README.md for PowerShell commands).
+    // 2) If your org uses a different host, update "claudeCode.host" accordingly.
+    // 3) Never paste private API keys into public repos or screenshots.
+    "trueVow.claudeConfigNote": "Configure the CLAUDE_API_KEY environment variable. See README.md for instructions."
+}
