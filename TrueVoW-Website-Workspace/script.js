@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const phone = document.getElementById('phone');
   if (phone) {
     phone.addEventListener('input', (e) => {
-      const digits = e.target.value.replace(/\D/g, '').slice(0, 10);
+      const digits = e.target.value.replace(/\D/g, '').slice(0,10);
       const parts = [];
-      if (digits.length > 0) parts.push(digits.slice(0, 3));
-      if (digits.length >= 4) parts.push(digits.slice(3, 6));
-      if (digits.length >= 7) parts.push(digits.slice(6, 10));
+      if (digits.length > 0) parts.push(digits.slice(0,3));
+      if (digits.length >= 4) parts.push(digits.slice(3,6));
+      if (digits.length >= 7) parts.push(digits.slice(6,10));
       if (parts.length === 0) e.target.value = '';
-      else if (parts.length === 1) e.target.value = '(' + parts[0] + (digits.length > 3 ? ') ' : '');
+      else if (parts.length === 1) e.target.value = '(' + parts[0] + (digits.length>3?') ':'');
       else if (parts.length === 2) e.target.value = '(' + parts[0] + ') ' + parts[1];
       else e.target.value = '(' + parts[0] + ') ' + parts[1] + '-' + parts[2];
     });
