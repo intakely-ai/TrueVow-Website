@@ -1,128 +1,132 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Intake — TrueVow</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="topnav">
-      <div class="nav-inner container">
-        <div class="brand"><a href="/">TrueVow.law</a></div>
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="intake.html">Sign Up / Intake</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="free.html">Free</a></li>
-            <li><a href="priority.html">Priority</a></li>
-            <li><a href="growth.html">Growth</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="nav-inner container">
+            <div class="brand"><a href="/">TrueVow.law</a></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="intake.html">Sign Up / Intake</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="free.html">Free</a></li>
+                    <li><a href="priority.html">Priority</a></li>
+                    <li><a href="growth.html">Growth</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <section class="container">
-        <div class="form-container">
-          <div class="form-header">
-            <h1>Attorney Intake</h1>
-            <div class="subtitle">Complete this form to begin a free intake. No upfront fees.</div>
-          </div>
+        <section class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Attorney Intake</h1>
+                    <div class="subtitle">Complete this form to begin a free intake. No upfront fees.</div>
+                </div>
 
-          <form id="intakeForm">
-            <div class="form-group">
-              <label for="firstName">First name <span class="required">*</span></label>
-              <input id="firstName" name="firstName" type="text" required />
+                <form id="intakeForm">
+                    <div class="form-group">
+                        <label for="firstName">First name <span class="required">*</span></label>
+                        <input id="firstName" name="firstName" type="text" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last name <span class="required">*</span></label>
+                        <input id="lastName" name="lastName" type="text" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="barNumber">Bar number</label>
+                        <input id="barNumber" name="barNumber" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firmName">Firm name</label>
+                        <input id="firmName" name="firmName" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone <span class="required">*</span></label>
+                        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
+                        <div class="helper-text">We will only contact you about this intake.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Select state</option>
+                            <optgroup label="Top states">
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                                <option value="FL">Florida</option>
+                                <option value="IL">Illinois</option>
+                            </optgroup>
+                            <optgroup label="All states">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <!-- Add others as needed -->
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="practiceArea">Practice area</label>
+                        <select id="practiceArea" name="practiceArea">
+                            <option value="personal-injury">Personal Injury</option>
+                            <option value="workers-comp">Workers' Compensation</option>
+                            <option value="family">Family Law</option>
+                            <option value="criminal">Criminal Defense</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firmSize">Firm size</label>
+                        <select id="firmSize" name="firmSize">
+                            <option value="solo">Solo</option>
+                            <option value="2-10">2–10</option>
+                            <option value="11-50">11–50</option>
+                            <option value="51+">51+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="casesPerMonth">Cases per month referred</label>
+                        <input id="casesPerMonth" name="casesPerMonth" type="text" />
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input id="needBilingual" name="needBilingual" type="checkbox" />
+                        <label for="needBilingual">Need bilingual support</label>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="submit-btn" type="submit">Submit Intake</button>
+                    </div>
+                </form>
+
+                <div class="form-footer">By submitting you agree to our <a href="/terms">Terms</a> and <a
+                        href="/privacy">Privacy</a>.</div>
             </div>
-
-            <div class="form-group">
-              <label for="lastName">Last name <span class="required">*</span></label>
-              <input id="lastName" name="lastName" type="text" required />
-            </div>
-
-            <div class="form-group">
-              <label for="barNumber">Bar number</label>
-              <input id="barNumber" name="barNumber" type="text" />
-            </div>
-
-            <div class="form-group">
-              <label for="firmName">Firm name</label>
-              <input id="firmName" name="firmName" type="text" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email <span class="required">*</span></label>
-              <input id="email" name="email" type="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone <span class="required">*</span></label>
-              <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
-              <div class="helper-text">We will only contact you about this intake.</div>
-            </div>
-
-            <div class="form-group">
-              <label for="state">State</label>
-              <select id="state" name="state">
-                <option value="">Select state</option>
-                <optgroup label="Top states">
-                  <option value="CA">California</option>
-                  <option value="NY">New York</option>
-                  <option value="TX">Texas</option>
-                  <option value="FL">Florida</option>
-                  <option value="IL">Illinois</option>
-                </optgroup>
-                <optgroup label="All states">
-                  <option value="AL">Alabama</option>
-                  <option value="AK">Alaska</option>
-                  <!-- Add others as needed -->
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="practiceArea">Practice area</label>
-              <select id="practiceArea" name="practiceArea">
-                <option value="personal-injury">Personal Injury</option>
-                <option value="workers-comp">Workers' Compensation</option>
-                <option value="family">Family Law</option>
-                <option value="criminal">Criminal Defense</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="firmSize">Firm size</label>
-              <select id="firmSize" name="firmSize">
-                <option value="solo">Solo</option>
-                <option value="2-10">2–10</option>
-                <option value="11-50">11–50</option>
-                <option value="51+">51+</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="casesPerMonth">Cases per month referred</label>
-              <input id="casesPerMonth" name="casesPerMonth" type="text" />
-            </div>
-
-            <div class="form-group checkbox-group">
-              <input id="needBilingual" name="needBilingual" type="checkbox" />
-              <label for="needBilingual">Need bilingual support</label>
-            </div>
-
-            <div class="form-group">
-              <button class="submit-btn" type="submit">Submit Intake</button>
-            </div>
-          </form>
-
-          <div class="form-footer">By submitting you agree to our <a href="/terms">Terms</a> and <a href="/privacy">Privacy</a>.</div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
